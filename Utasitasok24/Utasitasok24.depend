@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1527690109 source:c:\users\robert\desktop\bullshit sequel\bszp\feladatok\bszp\utasitasok24\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
