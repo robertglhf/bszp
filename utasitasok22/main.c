@@ -4,29 +4,39 @@
 int main()
 {
     //  Készítsünk számítógép programot, amely az egész számok közötti alapműveletek
-    //  (+, -, *, /, %) elvégzésére alkalmas! Védjük ki a nullával való osztást!
+    //  (+, -, *, /) elvégzésére alkalmas! Védjük ki a nullával való osztást!
 
-    float a, b;
-    float res;
-    char op;
+    char operator;
+    double szam1,szam2;
 
-    printf("adja meg 2 szamot: \n ");
-    scanf("%f%f",&a,&b);
-    printf("adja meg a muveletet: ");scanf("%s", &op);
+    printf("Adjon egy muveletet (+, -, *, /): ");
+    scanf("%c", &operator);
 
-    if (op == "+") {
-        res = a + b;
-        printf("%f", res);
-    } else if (op == "-"){
-        res = a - b;
-        printf("%f", res);
-    } else if (op == "*"){
-        res = a * b;
-        printf("%f", res);
-    } else if (op == "/"){
-        res = a / b;
-        printf("%f", res);
+    printf("Adjon 2 szamot: ");
+    scanf("%lf %lf",&szam1, &szam2);
+
+    switch(operator)
+    {
+        case '+':
+            printf("%.1lf + %.1lf = %.1lf",szam1, szam2, szam1 + szam2);
+            break;
+
+        case '-':
+            printf("%.1lf - %.1lf = %.1lf",szam1, szam2, szam1 - szam2);
+            break;
+
+        case '*':
+            printf("%.1lf * %.1lf = %.1lf",szam1, szam2, szam1 * szam2);
+            break;
+
+        case '/':
+            printf("%.1lf / %.1lf = %.1lf",szam1, szam2, szam1 / szam2);
+            break;
+
+        default:
+            printf("Ez nem egy muvelet!");
     }
 
+    return 0;
 
 }

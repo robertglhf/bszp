@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1527894148 source:c:\users\robert\desktop\bullshit sequel\bszp\feladatok\bszp\utasitasok76\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+
