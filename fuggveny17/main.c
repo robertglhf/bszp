@@ -1,14 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+void calc(int n) {
 
-int main()
-{
-    int n, i;
+    int i;
     float num[1000], sum = 0.0,sum2 = 1, szamtani, mertani;
-
-    printf("Szamok mennyisege: ");
-    scanf("%d", &n);
 
     while (n > 100 || n <= 0) {
         printf("Szamok mennyisega max 1000 lehet \n");
@@ -26,8 +22,17 @@ int main()
 
     szamtani = sum / n;
     mertani = sqrt(sum2);
-    printf("Szamtani atlag = %.2f \n Mertani atlag = %.2f", szamtani, mertani);
+    printf("\nSzamtani atlag = %.2f \n Mertani atlag = %.2f\n", szamtani, mertani);
+
+}
+
+int main()
+{
+    int n;
+    printf("Szamok mennyisege: ");
+    scanf("%d", &n);
+
+    calc(n);
 
     return 0;
-
 }
