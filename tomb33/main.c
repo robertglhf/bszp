@@ -17,34 +17,13 @@ int main()
       e/=10;
    }
 
-   if(ford==num)
-      printf("%d azonos forditottjaval",num);
-   else
-      printf("%d nem azonos forditottjaval",num);
+   if(ford==num) {
+        printf("%d azonos forditottjaval",num);
+   } else {
+    printf("%d nem azonos forditottjaval",num);
+   }
+
+
    return 0;
 }
 
-/*
-int main()
-{
-    int n[255], forditott = 0, m, e;
-
-    printf("Adjon meg egy szamot [max 255 szamjegy]: ");
-    scanf("%d", &n);
-
-    e = n;
-    while( n!=0 )
-    {
-        m = n%10;
-        forditott = forditott*10 + m;
-        n /= 10;
-    }
-
-    if (eredeti == forditott)
-        printf("%d azonos forditottjaval.", e);
-    else
-        printf("%d nem azonos forditottjaval.", e);
-
-    return 0;
-}
-*/

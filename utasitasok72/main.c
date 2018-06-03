@@ -6,12 +6,10 @@ int main()
     int i, szam, sum = 0 ;
 
     printf("\n Adjon meg egy szamot \n") ;
-    scanf("%d", &Number) ;
+    scanf("%d", &szam) ;
 
-    for(i = 1 ; i < szam ; i++)
-    {
-        if(szam % i == 0)
-        {
+    for(i = 1 ; i < szam ; i++){
+        if(szam % i == 0){
             sum = sum + i ;
         }
     }
