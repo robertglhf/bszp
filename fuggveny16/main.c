@@ -2,13 +2,13 @@
 #include <stdlib.h>
 
 void counter(int num, int n) {
-    int digit;
+    int m;
     int i, freq=0;
 
        while ( num != 0 )
         {
-            digit=num%10;
-            if (digit == n)
+            m=num%10;
+            if (m == n)
                 freq++;
             num=num/10;
         }
@@ -20,10 +20,10 @@ void counter(int num, int n) {
 int main()
 {
     int num, n;
-       printf("irj be egy szamot: ");
+       printf("Adjon meg egy szamot: ");
        scanf("%i", &num);
 
-       printf("keresett szamjegy: ");
+       printf("Adja meg a keresett szamjegyet: ");
        scanf("%i",&n);
 
        counter(num, n);
